@@ -17,6 +17,6 @@ gsea_plot <- gseaNb(object = GSEA_result,
        pvalX = 0.9,pvalY = 0.8
        )
 gsea_plot
-pdf(paste0("~/1.BRU_YanZhu_WorkSpace_20250807/bulk/1.result_figs/GSEA/GSEA_MHC-I-dependent antigen processing and presentation.pdf"),width = 4,height = 4.5)
+pdf(paste0("~/bulk/1.result_figs/GSEA/GSEA_MHC-I-dependent antigen processing and presentation.pdf"),width = 4,height = 4.5)
 print(gsea_plot)
 dev.off()
