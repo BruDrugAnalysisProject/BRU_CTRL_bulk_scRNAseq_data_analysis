@@ -485,13 +485,6 @@ for(g_s in names(immune_geneset)){
   }
   print(g_s)
 }
-immune_geneset_df <- immune_geneset_df[immune_geneset_df$source%in%c("Interferon-Gamma response",
-                                                                     "Interferon-Alpha response",
-                                                                     "IFNG signature",
-                                                                     "IFN-stimulated signature",
-                                                                     "Cytotoxic T-lymphocyte",
-                                                                     "Antigen processing and presentation",
-                                                                     "Antigen presentation by MHC-I"),]
 
 library(babelgene)
 mouse_orthologs <- orthologs(genes = immune_geneset_df$target, species = "mouse")
@@ -518,14 +511,6 @@ for(g_s in unique(immune_geneset_df_unique$source)){
 
 cd8t_scored <- AddModuleScore(cd8_t,features = immune_geneset_list_unique)
 colnames(cd8t_scored@meta.data)[22:ncol(cd8t_scored@meta.data)] <- names(immune_geneset_list_unique)
-
-immune_geneset_list_unique_selected <- immune_geneset_list_unique[c(1,2,3,4,7,5)]
-names(immune_geneset_list_unique_selected) <- c("IFN-alpha response",
-                                                "IFN-gamma response",
-                                                "Pan-interferon response",
-                                                "Antigen processing and presentation",
-                                                "Antigen presentation by MHC-I",
-                                                "Cytotoxic activity")
 
 expMatrix <- cd8_t@assays$RNA@counts
 cells_rankings <- AUCell_buildRankings(expMatrix, nCores=1, plotStats=TRUE) 
