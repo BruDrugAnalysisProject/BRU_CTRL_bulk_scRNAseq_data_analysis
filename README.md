@@ -1,8 +1,23 @@
-### The codes of analysis bulk and single-cell data
-#### 1. Bulk RNA-seq data from eight mouse tumor tissues (BRU-treated sample 1, BRU-treated sample 2, BRU-treated sample 3, BRU-treated sample 4, control sample 1, control sample 2, control sample 3, and control sample 4).
-#### 2. CD45+ magnetic bead sorting to isolate cells from dissociated BRU-treated and control tumor tissues, each includes three samples, then performed single-cell RNA sequencing (scRNA-seq).
-- Figure 1B & SuppFigure 1A
-- Figure 2A-C
-- Figure 3A-I
-- Figure 5A
-- mIF image analysis
+# Analysis Codes for Bulk and Single-Cell RNA-seq Data
+
+This repository contains the analysis codes used for processing and visualizing the bulk RNA-seq and single-cell RNA-seq (scRNA-seq) data in this study.
+
+## Data Description
+
+### 1. Bulk RNA-seq Data
+Bulk RNA-seq data were generated from eight mouse tumor tissue samples:
+- **BRU-treated group**: BRU-treated sample 1, BRU-treated sample 2, BRU-treated sample 3, BRU-treated sample 4
+- **Control group**: control sample 1, control sample 2, control sample 3, control sample 4
+
+### 2. Single-cell RNA-seq Data
+Immune cells were isolated from dissociated tumor tissues of both BRU-treated and control mice via **CD45⁺ magnetic bead sorting**. Each group contained **three independent biological samples**. The enriched immune cells were then subjected to **single-cell RNA sequencing (scRNA-seq)**.
+
+## Related Figures
+The codes in this repository generate the following figures presented in the manuscript:
+
+- **Figure 1B** & **Supplementary Figure 1A**
+- **Figure 2A–C**
+- **Figure 3A–I**
+- **Figure 5A**
+- **Multiplex immunofluorescence (mIF) image analysis**
+
