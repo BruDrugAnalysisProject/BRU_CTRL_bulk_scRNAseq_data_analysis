@@ -62,7 +62,7 @@ sc_dat_filtered <- FindClusters(sc_dat_filtered, resolution = 1.2)
 sc_dat_filtered <- FindClusters(sc_dat_filtered, resolution = 0.7)
 sc_dat_filtered <- FindClusters(sc_dat_filtered, resolution = 0.1)
 
-sc_dat_filtered_markers <- FindAllMarkers(sc_dat_sctype,only.pos = TRUE)
+sc_dat_filtered_markers <- FindAllMarkers(sc_dat_filtered,only.pos = TRUE)
 
 major_celltype <- c("CD8+ T cell",
                     "M1 macrophage",
