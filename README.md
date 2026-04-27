@@ -8,6 +8,7 @@ This repository contains the analysis codes used for processing and visualizing 
 Bulk RNA-seq data were generated from eight mouse tumor tissue samples:
 - **BRU-treated group**: BRU-treated sample 1, BRU-treated sample 2, BRU-treated sample 3, BRU-treated sample 4
 - **Control group**: control sample 1, control sample 2, control sample 3, control sample 4
+The bulk RNA-seq data was deposited on OMIX, OMIX ID is OMIX016555
 
 ### 2. Single-cell RNA-seq Data
 Immune cells were isolated from dissociated tumor tissues of both BRU-treated and control mice via **CD45⁺ magnetic bead sorting**. Each group contained **three independent biological samples**. The enriched immune cells were then subjected to **single-cell RNA sequencing (scRNA-seq)**.
