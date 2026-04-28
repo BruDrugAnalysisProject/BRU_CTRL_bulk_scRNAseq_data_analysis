@@ -14,7 +14,7 @@ The bulk RNA-seq data was deposited on OMIX (https://ngdc.cncb.ac.cn/omix/), OMI
 ### 2. Single-cell RNA-seq Data
 Immune cells were isolated from dissociated tumor tissues of both BRU-treated and control mice via **CD45⁺ magnetic bead sorting**. Each group contained **three independent biological samples**. The enriched immune cells were then subjected to **single-cell RNA sequencing (scRNA-seq)**.
 
-The single-cell RNA-seq data has been deposited in the GSA (https://ngdc.cncb.ac.cn/gsa/) under accession ID HRA028683 (updated from HRA025246) as part of the same project and is currently being reviewed by the NGDC.
+The single-cell RNA-seq data has been deposited in the GSA (https://ngdc.cncb.ac.cn/gsa/) under accession ID HRA028683 (updated from HRA025246) as part of the same project.
 
 ## Related Figures
 The codes in this repository generate the following figures presented in the manuscript:
