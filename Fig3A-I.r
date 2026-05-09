@@ -212,7 +212,7 @@ dev.off()
 
 ### analysis Cd8+ t cells 
 
-sc_dat_cd8 <- subset(sc_dat,subset = major_celltype=="CD8+ effector T cell")
+sc_dat_cd8 <- subset(sc_dat,subset = major_celltype=="CD8+ T cell")
 
 DimPlot(sc_dat_cd8)
 
@@ -233,7 +233,7 @@ View(cd8_diff_bru_ctrl)
 cd8_diff_bru <- cd8_diff_bru_ctrl[cd8_diff_bru_ctrl$cluster=="BRU",]
 cd8_diff_bru <- cd8_diff_bru[order(cd8_diff_bru$avg_log2FC,decreasing = TRUE),]
 
-p_rankplot <- function_rankplot(dat = cd8_diff_bru,plot_title="The highly expressed genes ofCD8+ T cells in BRU and control groups",input_type="FindAllMarkers",top_n = 15, down_n = 15,top_log2fc = 0.25,down_log2fc=-0.25)
+p_rankplot <- function_rankplot(dat = cd8_diff_bru,plot_title="The highly expressed genes of CD8+ T cells in BRU and control groups",input_type="FindAllMarkers",top_n = 15, down_n = 15,top_log2fc = 0.25,down_log2fc=-0.25)
 p_rankplot
 pdf("./deg_bru_ctrl_rank_plot.pdf",width = 8,height = 7)
 print(p_rankplot)
